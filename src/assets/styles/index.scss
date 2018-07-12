@@ -1,0 +1,87 @@
+@import './variables';
+
+*, ::after, ::before {
+
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  padding-bottom: 50px !important;
+  font-family: $font-stack;
+  min-height: 100vh;
+  display: grid;
+  font-size: 1.2em;
+  #root {
+    height: 100%;
+  }
+
+  .dark-theme {
+    background-color: #ddd !important;
+    background: url(../img/bg_logo.png) no-repeat center center fixed !important;
+    background-size: 100% 100% !important;
+    height: 100%;
+  }
+  .light-theme {
+    background-color: #FDFDFD !important;
+    background-size: 100% 100% !important;
+    height: 100%;
+  }
+
+  p, .md-card-text p, .md-text-field {
+    font-size: 1.1em;
+  }
+}
+
+main {
+  height: 100%;
+  .padder {
+    padding: 50px 100px;
+  }
+}
+
+.page-container {
+  min-height: 100vh !important;
+  padding-top: 3%;
+}
+
+#nprogress {
+
+}
+
+.section-title {
+  color: $primary-color;
+}
+
+.btn, .btn-flat{
+  border-radius: 0;
+}
+
+.md-background--primary {
+  background: $primary-color !important;
+}
+
+.md-card-text {
+  font-size: 13px !important;
+}
+
+.section-title, .md-card-title--title {
+  color: $primary-color !important;
+}
+
+.alert {
+  border-radius: 0 !important;
+}
+
+.md-btn-swapped--disabled {
+  background:#969596 !important;
+}
+
+@media (max-width: 767.98px) {
+  .padder {
+    padding: 20px !important;
+  }
+}
