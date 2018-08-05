@@ -10,27 +10,16 @@ html {
 }
 
 body {
-  padding-bottom: 50px !important;
+  margin-bottom: 60px;
   font-family: $font-stack;
-  min-height: 100vh;
-  display: grid;
   font-size: 1.2em;
+  min-height: 100vh;
+
   #root {
     height: 100%;
+    display: grid;
+    grid-template-rows: 50px auto;
   }
-
-  .dark-theme {
-    background-color: #ddd !important;
-    background: url(../img/bg_logo.png) no-repeat center center fixed !important;
-    background-size: 100% 100% !important;
-    height: 100%;
-  }
-  .light-theme {
-    background-color: #FDFDFD !important;
-    background-size: 100% 100% !important;
-    height: 100%;
-  }
-
   p, .md-card-text p, .md-text-field {
     font-size: 1.1em;
   }
@@ -38,7 +27,7 @@ body {
 
 main {
   height: 100%;
-  .padder {
+  .padded {
     padding: 50px 100px;
   }
 }
@@ -48,36 +37,26 @@ main {
   padding-top: 3%;
 }
 
-#nprogress {
-
-}
-
-.section-title {
-  color: $primary-color;
-}
-
 .btn, .btn-flat{
   border-radius: 0;
 }
 
-.md-background--primary {
-  background: $primary-color !important;
-}
-
-.md-card-text {
-  font-size: 13px !important;
-}
-
-.section-title, .md-card-title--title {
-  color: $primary-color !important;
-}
-
-.alert {
-  border-radius: 0 !important;
-}
-
 .md-btn-swapped--disabled {
   background:#969596 !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 767.98px) {
