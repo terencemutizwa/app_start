@@ -63,7 +63,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Ix APpp here',
+            title: 'RPS!',
             template: './src/www/index.html',
             favicon:'./src/assets/img/favicon/favicon-32x32.png'
         })
