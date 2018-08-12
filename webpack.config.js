@@ -65,7 +65,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'RPS!',
             template: './src/www/index.html',
-            favicon:'./src/assets/img/favicon/favicon-32x32.png'
+            favicon:''
         })
     ],
     devServer:{
